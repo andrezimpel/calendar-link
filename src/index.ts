@@ -129,6 +129,13 @@ export const ics = (calendarEvent: CalendarEvent): string => {
     .replace(/(\\n)[\s\t]+/gm, "\\n");
 
   const { start, end } = formatTimes(event, event.allDay ? "allDay" : "dateTimeUTC");
+  // generate a uuid for the event without a package
+  const uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
+    var r = Math.random() * 16 | 0, v = c == 'x' ? r : (r & 0x3 | 0x8)
+    return v.toString(16)
+  })
+
+
   const calendarChunks = [
     {
       key: "BEGIN",
@@ -173,6 +180,14 @@ export const ics = (calendarEvent: CalendarEvent): string => {
     {
       key: "ORGANIZER",
       value: event.organizer,
+    },
+    {
+      key: "UID",
+      value: event.organizer,
+    },
+    {
+      key: "DTSTAMP",
+      value: event.start,
     },
     {
       key: "END",
