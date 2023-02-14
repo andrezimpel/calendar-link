@@ -183,7 +183,7 @@ export const ics = (calendarEvent: CalendarEvent): string => {
     },
     {
       key: "UID",
-      value: event.organizer,
+      value: uuid,
     },
     {
       key: "DTSTAMP",
