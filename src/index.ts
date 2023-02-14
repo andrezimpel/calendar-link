@@ -36,7 +36,7 @@ export const eventify = (event: CalendarEvent, toUtc: boolean = true): Normalize
         if (duration && duration.length == 2) {
           const value = Number(duration[0]);
           const unit = duration[1];
-          return startTime.add(value, unit);
+          return startTime.add(value, unit as any);
         }
         return toUtc ? dayjs().utc() : dayjs();
       })();
