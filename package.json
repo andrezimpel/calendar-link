@@ -1,5 +1,5 @@
 {
-  "name": "calendar-link",
+  "name": "calendar-link-id",
   "version": "2.4.0",
   "description": "📅 Calendar link generator for popular services, like Google, Outlook, and Yahoo.",
   "main": "dist/index.js",
@@ -20,12 +20,12 @@
     "test": "jest",
     "test-watch": "jest --watch",
     "coverage": "jest --coverage",
-    "update-template": "npx update-template https://github.com/AnandChowdhary/calendar-link",
+    "update-template": "npx update-template https://github.com/andrezimpel/calendar-link",
     "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AnandChowdhary/calendar-link.git"
+    "url": "git+https://github.com/andrezimpel/calendar-link.git"
   },
   "keywords": [
     "nodejs",
@@ -39,7 +39,7 @@
   "author": "Anand Chowdhary <mail@anandchowdhary.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AnandChowdhary/calendar-link/issues"
+    "url": "https://github.com/andrezimpel/calendar-link/issues"
   },
   "homepage": "https://anandchowdhary.github.io/calendar-link/",
   "devDependencies": {
