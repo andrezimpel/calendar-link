@@ -143,6 +143,10 @@ export const ics = (calendarEvent: CalendarEvent): string => {
       value: "2.0",
     },
     {
+      key: "PRODID",
+      value: event.prodId,
+    },
+    {
       key: "BEGIN",
       value: "VEVENT",
     },
