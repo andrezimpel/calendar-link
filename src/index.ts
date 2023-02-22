@@ -139,12 +139,12 @@ export const ics = (calendarEvent: CalendarEvent): string => {
       value: "VCALENDAR",
     },
     {
-      key: "VERSION",
-      value: "2.0",
-    },
-    {
       key: "PRODID",
       value: event.prodId,
+    },
+    {
+      key: "VERSION",
+      value: "2.0",
     },
     {
       key: "BEGIN",
